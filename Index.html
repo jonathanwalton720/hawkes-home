@@ -8,8 +8,8 @@
     <title>Hawkes Home, Inc.</title>
 
     <!-- Bootstrap -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-
+    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,7 +19,7 @@
 
 </head>
 <body>
-    <div class="">
+    <div class="container-fluid">
 
         <div id="my-carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -29,21 +29,21 @@
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
-                    <img alt="First slide" src="http://placehold.it/1200x675&text=First+slide">
+                    <img alt="First slide" src="http://placehold.it/3000x400">
                     <div class="carousel-caption">
                         <h3>Caption heading 1</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img alt="Second slide" src="http://placehold.it/1200x675&text=Second+slide">
+                    <img alt="Second slide" src="http://placehold.it/3000x400">
                     <div class="carousel-caption">
                         <h3>Caption heading 2</h3>
                         <p>Morbi eget libero quis metus consectetur semper.</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img alt="Third slide" src="http://placehold.it/1200x675&text=Third+slide">
+                    <img alt="Third slide" src="http://placehold.it/3000x400">
                     <div class="carousel-caption">
                         <h3>Caption heading 3</h3>
                         <p>Suspendisse ullamcorper massa eget eleifend iaculis.</p>
@@ -58,10 +58,101 @@
             </a>
         </div>
 
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
     </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>MISSION STATEMENT</h1>
+
+                <p>HAWKES HOME, Inc., a 501(c)3 non-profit corporation was formed to provide temporary housing and reentry education for men exiting prison or jail. As they strive to reclaim their dignity and rebuild their lives, our clients face the daunting challenge of adjusting to the changes in society that took place during their confinement.</p>
+
+                <p>Through participation in Narcotics Anonymous (NA) and Alcoholics Anonymous (AA) and by using their newly acquired life skills, the men will be encouraged to avoid old contacts and the destructive behaviors that originally led to the trouble that resulted in their incarceration.</p>
+
+                <p>They will have opportunities to learn the practical skills of the "business of living," i.e. job search, money management, computer proficiency, health maintenance, independent living, and other abilities required to launch satisfying new lives for themselves on the outside as productive members of society.</p>
+
+                <p>The success of these men at the Hawkes House translates to a better world for all! </p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid">
+
+
+            <div class="bg-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <p class="small">
+                                Non-profit Home for Men Transitioning from Incarceration to Life "Outside the Walls"
+                                <br />FEIN 42-1728327 - California Corporation 2599406
+                            </p>
+                            
+                            <p>
+                                <img src="Content/home_0_03_01.jpg" alt="A Helping Hand" />
+                                "A HELPING HAND TO A Productive, CLEAN AND SOBER LIFE"
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <p class="small text-center">
+                                Hawkes Home, Inc.
+                                <br />P.O. Box 232781
+                                <br />Encinitas, California 92023-2781
+                                <br />760-641-2091
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+    </div>
+
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <script src="Content/bootstrap.js"></script>
 </body>
 </html>
