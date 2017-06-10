@@ -1,221 +1,335 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-	<meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hawkes Home, Inc.</title>
-
-    <!-- Bootstrap -->
-    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hawkes Home, Inc.</title>
+  <link href="Content/bootstrap.css" rel="stylesheet" />
+  <link href="Content/site.css" rel="stylesheet" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
-    <div style="margin-top:5px;"></div>
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-default" style="margin-bottom:0;">
-                <div class="navbar-brand">Hawkes Home, Inc.</div>
-            </nav>
-            <div style="margin-top:5px;"></div>
-            <div id="my-carousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#my-carousel" data-slide-to="1"></li>
-                    <li data-target="#my-carousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img alt="First slide" class="img-responsive" style="max-width:100%;width:3000px;height:auto;" src="Content/hawkeshome1.JPG" />
-                        <!--<div class="carousel-caption">
-                            <h3>Caption heading 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>-->
-                    </div>
-                    <div class="item">
-                        <img alt="Second slide" style="max-width:100%;width:3000px;height:auto;" src="Content/hawkeshome2.jpg">
-                        <!--<div class="carousel-caption">
-                            <h3>Caption heading 2</h3>
-                            <p>Morbi eget libero quis metus consectetur semper.</p>
-                        </div>-->
-                    </div>
-                    <div class="item">
-                        <img alt="Third slide" style="max-width:100%;width:3000px;height:auto;" src="Content/hawkeshome3.JPG">
-                        <!--<div class="carousel-caption">
-                            <h3>Caption heading 3</h3>
-                            <p>Suspendisse ullamcorper massa eget eleifend iaculis.</p>
-                        </div>-->
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#my-carousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#my-carousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+  <!--HEADER-->
+  <header>
+    <div class="background-bold">
+      <div class="xcontainer">
+
+        <nav class="navbar" role="navigation">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-logo">
+              <a class="hide-guidelines" href="#home" style="color:#000;font-size:36px;">
+                <img class="logo" src="Content/logo.svg" alt="A Helping Hand"> Hawkes Home, Inc.
+              </a>
             </div>
-            <div style="margin-top:5px;"></div>
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#home" data-toggle="tab">Hawkes Home, Inc.</a>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#mission" data-toggle="tab">Read Our Mission</a></li>
-                            <li><a href="#involve" data-toggle="tab">Get Involved</a></li>
-                            <li><a href="#guidelines" data-toggle="tab">See The Guidelines</a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" role="tab-list">
+              <li><a class='hide-guidelines' href="#mission">Read Our Mission</a></li>
+              <li><a class='hide-guidelines' href="#involve">Get Involved</a></li>
+              <li><a class='show-guidelines' href="#guidelines">See The Guidelines</a></li>
+          </ul>
+          </div>
+          <!-- /.navbar-collapse -->
 
-        </div>
-    </header>
+        </nav>
 
-    <div class="container">
-
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="home">
-
-                <div class="row">
-                    <div class="col-sm-6 col-sm-push-3">
-                        <h1>Life Outside the Walls</h1>
-                        <p class="lead">We provide a helping hand to a productive, clean, and sober life.</p>
-                        <p class="ita">I am really greatful for Hawkes Home. They gave me the chance to start my new life (a real life). What I have experienced here is a clean and sober environment, a place where I feel safe. What the Hawkes has done and is doing for me is giving me an affordable place where I can be a productive member in this society. I owe my life, the way it is today, to Hawkes Home.</p>
-                        <p>&mdash; Butch</p>
-                        <p>When I decided to change my life, the Hawkes House provided a safe environment with well-rounded people to support me. I proceeded forward in taking the steps I needed to take to become a pro­active and positive member of today's society. Thank you, Hawkes House.</p>
-                        <p>&mdash; Dwayne</p>
-                        <p>Hawkes Home has done so much for me. When I got here, I had nothing in my life. Now my life is 100% better than ever. Now I am manager here, I get to help other men in their journey in recovery. One of the big things in my life, I have good in my life now.</p>
-                        <p>&mdash; Clyde</p>
-                        <p>I believe Hawkes Home provides men an affordable opportunity to better their lives in a loving manner. By giving these men a safe and structured environment, they are able to grow as individuals and become productive members of our society. As a house manager, I'm able to work with these men and see the growth in them. As an addict myself, working with the men is helping me stay sober. Teaching me a new set of skills and compassion when it comes to dealing with life's problems.</p>
-                        <p>&mdash; Bruce</p>
-                        <p>I was recently released from prison, no home, no family, feeling hopeless. I told myself I would do whatever it takes to never go back to prison. My first day out I attended an AA meeting and got myself a sponsor and someone gave me a number for sober living (Hawkes Home). Feeling desperate, I called and spoke with the house manager. I was told they were full. Then I explained my situation and was told to call back. I did and the manager said they could help me by offering the couch to sleep on until I could figure something out. With a place to sleep, I could start looking for a job. Hawkes Home helped me get some clothes and a bus pass. I was employed within a week and put a down payment on a car in two weeks. I have never felt so blessed. I honestly don't know where I would be if it weren't for Hawkes Home. Thank you for the love and support!</p>
-                        <p>&mdash; Michael</p>
-                        <p>Hawkes Home has created a peaceful environment for me. I transitioned here after I graduated from rehab. Thanks to Hawkes Home, I've been able to keep my sobriety. It's an elite transitional home compared to other homes here in Vista.</p>
-                        <p>&mdash; Albert</p>
-                    </div>
-                </div>
-
-            </div>
-            <div role="tabpanel" class="tab-pane" id="mission">
-
-                <div class="row">
-                    <div class="col-sm-6 col-sm-push-3">
-                        <h1>Our Mission</h1>
-                        <h3>Non-Profit</h3>
-                        <p>Hawkes Home, Inc., a 501(c)3 non-profit corporation was formed to provide temporary housing and reentry education for men exiting prison or jail. As our clients strive to reclaim their dignity and rebuild their lives, they face the daunting challenge of adjusting to the changes in society that took place during their confinement.</p>
-                        <h3>Participation</h3>
-                        <p>Through participation in Narcotics Anonymous (NA) and Alcoholics Anonymous (AA) and by using their newly-acquired life skills, clients will be encouraged to avoid old contacts and the destructive behaviors that originally led to their incarceration.</p>
-                        <h3>Business of Living</h3>
-                        <p>Clients will have opportunities to learn the practical skills of the business of living. Skills such as job searching, money management, computer proficiency, health maintenance, independent living, and other abilities are explored to help launch new lives for themselves on the outside as productive members of society.</p>
-                        <p>The success of these men at Hawkes Home translates to a better world for all! </p>
-                    </div>
-                </div>
-
-            </div>
-            <div role="tabpanel" class="tab-pane" id="involve">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-push-3">
-                        <h1>Get Involved</h1>
-                        <h3>Fresh Start</h3>
-                        <p>We at Hawkes Home, in order to provide the clients with a fresh start, offer a clean and sober place to live at no charge for the first 2 months. We also provide them with a bus pass, clothing, hygiene articles and other items they may need.</p>
-                        <p>For us at Hawkes Home to be able to provide for the clients as well as keep up the maintenance of the home, we look to the generosity of people and businesses in our community for charitable donations.</p>
-                        <p>If you have anything that you feel could be useful, please contact us here at Hawkes Home.</p>
-                        <h3>Donate</h3>
-                        <p>You may send your checks to: </p>
-                        <address>
-                            <strong>Hawkes Home, Inc.</strong> <br />
-                            P.O. Box 232781 <br />
-                            Encinitas, CA  92023-2781
-                            Federal Tax ID:  42-1728327
-                        </address>
-                        <p>Your donations may be tax deductible.</p>
-                    </div>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="guidelines">
-
-                <div class="row">
-                    <div class="col-sm-6 col-sm-push-3">
-                        <h1>House Guidelines</h1>
-                        <h3>Period of Residence</h3>
-                        <p>Length of stay in Hawkes Home is determined by the willingness to follow house rules and the ability to secure employment, as discussed with House Management. </p>
-                        <h3>Behavior</h3>
-                        <p>Clients must be willing to live peacefully with all other residents in the house. No violence, gossip, racial epithets, or disrespectful behavior is tolerated. Rules need to be followed with a spirit of teamwork to promote a positive environment within the home.</p>
-                        <h3>Chores</h3>
-                        <p>Chores are assigned daily and must be completed without complaint as directed by House Management before leaving in the morning, or after returning in the evening. Beds must be neatly made each morning, possessions stored in closets or drawers, and all personal care items stored out of sight.</p>
-                        <h3>Food/Meals</h3>
-                        <p>Basic food items are provided by Hawkes Home. Clients are welcome to prepare and eat breakfast at the house. Breakfast must be finished and the kitchen cleaned by 8:15 am. Hawkes Home has an open kitchen policy. Clients may eat at anytime during kitchen hours. Food must be eaten in the kitchen or on the backyard patio. Food and drink (except water) are not allowed in the bedrooms. Clients must clean up after themselves. All personal food items need to be labeled with a name and stored neatly. Kitchen needs to be cleaned up and closed down by 9:00 pm.</p>
-                        <h3>Weapons/Drugs/Alcohol</h3>
-                        <p>No weapons, drugs, or alcohol are permitted on the premises. For everyone’s safety, belongings may be subject to inspection upon entry to the house. Clients will also be asked to submit to a drug test prior to admission and to random testing during their stay.</p>
-                        <h3>Medication</h3>
-                        <p>All medication (prescription or nonprescription) must be disclosed to House Management.</p>
-                        <h3>Bathroom</h3>
-                        <p>Daily bathing is required. Each client is responsible for cleaning the bathroom after every use. Personal towels and other hygiene items should never be left in the bathroom. Clients should be considerate of others and not tie up the bathroom unnecessarily.</p>
-                        <h3>Laundry</h3>
-                        <p>Laundry may be done at anytime. Clients need to wipe down the washer or dryer and clean the lint filter after each use. Laundry soap is provided for a small fee per load to help offset the cost of running the house. Clients may not leave the premises while they have laundry in either the washer or dryer.  They may not leave laundry in the washer or dryer overnight.</p>
-                        <h3>Fees</h3>
-                        <p>All fees must be paid in full and on time, unless prior arrangements have been made with House Management.</p>
-                        <h3>Curfew</h3>
-                        <p>Curfew is 10:00 pm Sunday through Thursday and 11:00 pm on Friday and Saturday. Exceptions must be approved by House Management.</p>
-                        <h3>House Meeting</h3>
-                        <p>In order to promote a spirit of cooperation within Hawkes Home, there is a mandatory house meeting every Monday at 8:00 pm. Exceptions are at the discretion of House Management.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
+      </div>
     </div>
-
-    <div style="height:28px;"></div>
-
-    <footer>
-
-        <div class="container">
-            <div class="navbar navbar-default" style="padding:14px;">
-                <p class="lead text-center">
-                    Hawkes Home is a non-profit for men transitioning from incarceration to life outside the walls. <br />
-                </p>
-                <h1 class="text-center"><img src="Content/home_0_03_01.jpg" alt="A Helping Hand" style="border:1px solid #e7e7e7;border-radius:4px;" /> Hawkes Home, Inc.</h1>
-                <address class="text-center">
-                    FEIN 42-1728327 - California Corporation 2599406<br />
-                    P.O. Box 232781<br />
-                    Encinitas, California 92023-2781<br />
-                    760-641-2091
-                </address>
-            </div>
+    <div style="position:relative;">
+      <div class="item active">
+        <img class="img-responsive" style="max-width:100%;width:3000px;height:auto;" src="Content/banner.jpg" />
+        <div class="carousel-caption">
+          <div class="container">
+            <h1 style="font-size:42px;">Life Outside the Walls</h1>
+            <p class="lead">We provide a helping hand to a productive, clean, and sober life.</p>
+          </div>
         </div>
+      </div>
+    </div>
+  </header>
+  <!--MAIN CONTENT-->
+  <div id="home">
+    <div class="background-light">
+      <div class="container">
+        <div class="tab-content">
+          <div id="testimonial">
 
-    </footer>
+            <div class="row">
 
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
-    <script src="Content/bootstrap.js"></script>
-    <script>
-        (function () {
-            $(document).on('click', '.navbar-brand', function () {
-                $('.navbar-nav > li').removeClass('active');
-            });
-        })();
-    </script>
+              <div class="col-sm-6" style="padding:0 5px 10px 5px">
+                <div class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="/Content/testimonial1.jpg" alt="" class="img-responsive">
+                      <div class="carousel-caption show-hover">
+                        <p>I am really greatful for Hawkes Home. They gave me the chance to start my new life (a real life). What I have experienced here is a clean and sober environment, a place where I feel safe. What the Hawkes has done and is doing for
+                          me is giving me an affordable place where I can be a productive member in this society. I owe my life, the way it is today, to Hawkes Home.</p>
+                        <h3 class="media-heading">&mdash; Butch</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6" style="padding:0 5px 10px 5px">
+                <div class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="/Content/testimonial2.jpg" alt="" class="img-responsive">
+                      <div class="carousel-caption show-hover">
+                        <p>When I decided to change my life, the Hawkes House provided a safe environment with well-rounded people to support me. I proceeded forward in taking the steps I needed to take to become a pro­active and positive member of today's
+                          society. Thank you, Hawkes House.</p>
+                        <h3 class="media-heading">&mdash; Dwayne</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6" style="padding:0 5px 10px 5px">
+                <div class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="/Content/testimonial3.jpg" alt="" class="img-responsive">
+                      <div class="carousel-caption show-hover">
+                        <p>Hawkes Home has done so much for me. When I got here, I had nothing in my life. Now my life is 100% better than ever. Now I am manager here, I get to help other men in their journey in recovery. One of the big things in my life,
+                          I have good in my life now.</p>
+                        <h3 class="media-heading">&mdash; Clyde</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6" style="padding:0 5px 10px 5px">
+                <div class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="/Content/testimonial4.jpg" alt="" class="img-responsive">
+                      <div class="carousel-caption show-hover">
+                        <p>As a house manager, I'm able to work with these men and see the growth in them. As an addict myself, working with the men is helping me stay sober. Teaching me a new set of skills and compassion when it comes to
+                          dealing with life's problems.
+                        </p>
+                        <h3 class="media-heading">&mdash; Bruce</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6" style="padding:0 5px 10px 5px">
+                <div class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="/Content/testimonial5.jpg" alt="" class="img-responsive">
+                      <div class="carousel-caption show-hover">
+                        <p>With a place to sleep, I could start looking for a job. Hawkes Home helped me get some clothes and a bus pass. I was employed within a week and put
+                          a down payment on a car in two weeks. I have never felt so blessed. I honestly don't know where I would be if it weren't for Hawkes Home. Thank you for the love and support!</p>
+                        <h3 class="media-heading">&mdash; Michael</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6" style="padding:0 5px 10px 5px">
+                <div class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="/Content/testimonial6.jpg" alt="" class="img-responsive">
+                      <div class="carousel-caption show-hover">
+                        <p>Hawkes Home has created a peaceful environment for me. I transitioned here after I graduated from rehab. Thanks to Hawkes Home, I've been able to keep my sobriety. It's an elite transitional home compared to other homes here in
+                          Vista.</p>
+                        <h3 class="media-heading">&mdash; Albert</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background-bold">
+      <div class="container">
+        <div id="mission">
+          <h1>Our Mission</h1>
+          <p>The success of these men at Hawkes Home translates to a better world for all! </p>
+
+          <div class="media">
+            <div class="media-body media-middle">
+              <h2 class="media-heading">Non-Profit</h2>
+              <p>Hawkes Home, Inc., a 501(c)3 non-profit corporation was formed to provide temporary housing and reentry education for men exiting prison or jail. As our clients strive to reclaim their dignity and rebuild their lives, they face the
+                daunting challenge of adjusting to the changes in society that took place during their confinement.</p>
+            </div>
+            <div class="media-right">
+              <a href="#">
+                <img class="media-object img-circle" src="/Content/charity.svg" alt="Image">
+              </a>
+            </div>
+          </div>
+
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object img-circle" src="/Content/participate.svg" alt="Image">
+              </a>
+            </div>
+            <div class="media-body media-middle">
+              <h2 class="media-heading">Participation</h2>
+              <p>Through participation in Narcotics Anonymous (NA) and Alcoholics Anonymous (AA) and by using their newly-acquired life skills, clients will be encouraged to avoid old contacts and the destructive behaviors that originally led to their
+                incarceration.
+              </p>
+            </div>
+          </div>
+
+          <div class="media">
+            <div class="media-body media-middle">
+              <h2 class="media-heading">Business of Living</h2>
+              <p>Clients will have opportunities to learn the practical skills of the business of living. Skills such as job searching, money management, computer proficiency, health maintenance, independent living, and other abilities are explored
+                to help launch new lives for themselves on the outside as productive members of society.</p>
+            </div>
+            <div class="media-right">
+              <a href="#">
+                <img class="media-object img-circle" src="/Content/life.svg" alt="Image">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>&nbsp;</div>
+      </div>
+    </div>
+    <div class="background-light">
+      <div class="container">
+        <div id="involve">
+          <h1>Get Involved</h1>
+          <div class="row">
+            <div class="col-sm-6">
+              <h2>Fresh Start</h2>
+              <p>We at Hawkes Home, in order to provide the clients with a fresh start, offer a clean and sober place to live at no charge for the first 2 months. We also provide them with a bus pass, clothing, hygiene articles and other items they may
+                need.</p>
+              <p>For us at Hawkes Home to be able to provide for the clients as well as keep up the maintenance of the home, we look to the generosity of people and businesses in our community for charitable donations.</p>
+              <p>If you have anything that you feel could be useful, please contact us here at Hawkes Home.</p>
+
+            </div>
+            <div class="col-sm-6">
+              <h2>Donate</h2>
+              <p>You may send your checks to: </p>
+              <address>
+                          <strong>Hawkes Home, Inc.</strong> <br />
+                          P.O. Box 232781 <br />
+                          Encinitas, CA  92023-2781
+                          Federal Tax ID:  42-1728327
+                      </address>
+              <p>Your donations may be tax deductible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--GUIDELINES-->
+  <div id="guidelines" style="display:none">
+    <div class="background-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h1>House Guidelines</h1>
+            <h3>Period of Residence</h3>
+            <p>Length of stay in Hawkes Home is determined by the willingness to follow house rules and the ability to secure employment, as discussed with House Management. </p>
+            <h3>Behavior</h3>
+            <p>Clients must be willing to live peacefully with all other residents in the house. No violence, gossip, racial epithets, or disrespectful behavior is tolerated. Rules need to be followed with a spirit of teamwork to promote a positive environment
+              within the home.</p>
+            <h3>Chores</h3>
+            <p>Chores are assigned daily and must be completed without complaint as directed by House Management before leaving in the morning, or after returning in the evening. Beds must be neatly made each morning, possessions stored in closets or drawers,
+              and all personal care items stored out of sight.</p>
+            <h3>Food/Meals</h3>
+            <p>Basic food items are provided by Hawkes Home. Clients are welcome to prepare and eat breakfast at the house. Breakfast must be finished and the kitchen cleaned by 8:15 am. Hawkes Home has an open kitchen policy. Clients may eat at anytime
+              during kitchen hours. Food must be eaten in the kitchen or on the backyard patio. Food and drink (except water) are not allowed in the bedrooms. Clients must clean up after themselves. All personal food items need to be labeled with a name
+              and stored neatly. Kitchen needs to be cleaned up and closed down by 9:00 pm.</p>
+            <h3>Weapons/Drugs/Alcohol</h3>
+            <p>No weapons, drugs, or alcohol are permitted on the premises. For everyone’s safety, belongings may be subject to inspection upon entry to the house. Clients will also be asked to submit to a drug test prior to admission and to random testing
+              during their stay.</p>
+            <h3>Medication</h3>
+            <p>All medication (prescription or nonprescription) must be disclosed to House Management.</p>
+            <h3>Bathroom</h3>
+            <p>Daily bathing is required. Each client is responsible for cleaning the bathroom after every use. Personal towels and other hygiene items should never be left in the bathroom. Clients should be considerate of others and not tie up the bathroom
+              unnecessarily.
+            </p>
+            <h3>Laundry</h3>
+            <p>Laundry may be done at anytime. Clients need to wipe down the washer or dryer and clean the lint filter after each use. Laundry soap is provided for a small fee per load to help offset the cost of running the house. Clients may not leave the
+              premises while they have laundry in either the washer or dryer. They may not leave laundry in the washer or dryer overnight.</p>
+            <h3>Fees</h3>
+            <p>All fees must be paid in full and on time, unless prior arrangements have been made with House Management.</p>
+            <h3>Curfew</h3>
+            <p>Curfew is 10:00 pm Sunday through Thursday and 11:00 pm on Friday and Saturday. Exceptions must be approved by House Management.</p>
+            <h3>House Meeting</h3>
+            <p>In order to promote a spirit of cooperation within Hawkes Home, there is a mandatory house meeting every Monday at 8:00 pm. Exceptions are at the discretion of House Management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FOOTER-->
+  <footer>
+    <div class="background-bold">
+      <div class="container">
+        <div class="navbar">
+          <h1 style="color:#000"><img class="logo" src="Content/logo.svg" alt="A Helping Hand" /> Hawkes Home, Inc.</h1>
+          <p class="lead">
+            Hawkes Home is a non-profit for men transitioning from incarceration to life outside the walls. <br />
+          </p>
+          <address>
+          FEIN 42-1728327 - California Corporation 2599406<br />
+          P.O. Box 232781<br />
+          Encinitas, California 92023-2781<br />
+          760-641-2091
+        </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--SCRIPTS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="Content/bootstrap.js"></script>
+  <script>
+    (function() {
+      $(document).on('click', '.navbar-brand', function() {
+        $('.navbar-nav > li').removeClass('active');
+      });
+      $(document).on('click', '.show-guidelines', function() {
+        $('#guidelines').show();
+        $('#home').hide();
+      });
+      $(document).on('click', '.hide-guidelines', function() {
+        $('#guidelines').hide();
+        $('#home').show();
+      });
+      $(document).on('click', 'a', function(event) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+      });
+    })();
+  </script>
 </body>
 </html>
