@@ -26,6 +26,15 @@ body {
    min-height:80px;
 }
 
+.icon-bar {
+  background-color:#000;
+}
+
+.navbar-logo a {
+   color:#000;
+   font-size:36px;
+}
+
 .navbar-logo a:hover {
   text-decoration: none;
 }
@@ -70,4 +79,26 @@ body {
 .show-hover:hover {
   opacity:1;
   background-color:rgba(0,0,0,0.6);
+}
+
+#banner {
+  position:relative;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size:24px;
+  }
+  h2, h3 {
+    font-size:20px;
+  }
+  p, address {
+    font-size:14px;
+  }
+  .navbar-logo a {
+    font-size:20px;
+  }
+  .img-circle {
+    max-width:100px;
+  }
 }
